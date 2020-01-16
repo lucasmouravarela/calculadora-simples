@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Calculator</title>
+</head>
+<body class="container">
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            
+                <table class="mt-5 table table-dark table-bordered">
+                    <tr>
+                        <td colspan="4"><form name="form"><input class="textview text-right btn btn-block btn-light" name="textview"></form></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input class="btn btn-block btn-dark" type="button" value="C" onclick="limpando()"></td>
+                        <td><input class="btn btn-block btn-dark" type="button" value="/" onclick="inserindo('/')"></td>
+                        <td><input class="btn btn-block btn-dark" type="button" value="X" onclick="inserindo('*')"></td>
+                    </tr>
+    
+                    <tr>
+                        <td><input class="btn btn-block btn-dark" type="button" value="7" onclick="inserindo(7)"></td>
+                        <td><input class="btn btn-block btn-dark" type="button" value="8" onclick="inserindo(8)"></td>
+                        <td><input class="btn btn-block btn-dark" type="button" value="9" onclick="inserindo(9)"></td>
+                        <td><input class="btn btn-block btn-dark" type="button" value="+" onclick="inserindo('+')"></td>
+                    </tr>
+    
+                    <tr>
+                        <td><input class="btn btn-block btn-dark" type="button" value="4" onclick="inserindo(4)"></td>
+                        <td><input class="btn btn-block btn-dark" type="button" value="5" onclick="inserindo(5)"></td>
+                        <td><input class="btn btn-block btn-dark" type="button" value="6" onclick="inserindo(6)"></td>
+                        <td><input class="btn btn-block btn-dark" type="button" value="-" onclick="inserindo('-')"></td>
+                    </tr>
+    
+                    <tr>
+                        <td><input class="btn btn-block btn-dark" type="button" value="1" onclick="inserindo(1)"></td>
+                        <td><input class="btn btn-block btn-dark" type="button" value="2" onclick="inserindo(2)"></td>
+                        <td><input class="btn btn-block btn-dark" type="button" value="3" onclick="inserindo(3)"></td>
+                        <td rowspan="2" style="vertical-align: middle;"><input class="btn btn-block btn-dark" type="button" value="=" onclick="igual()"></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"><input class="btn btn-block btn-dark" type="button" value="0" onclick="inserindo(0)"></td>
+                        <td><input class="btn btn-block btn-dark" type="button" value="." onclick="inserindo('.')"></td>
+                    </tr>
+                </table>
+
+
+
+
+
+        </div>
+        
+    </div>
+    <script src="js/events.js"></script>
+</body>
+</html>
